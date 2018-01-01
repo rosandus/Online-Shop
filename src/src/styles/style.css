@@ -1,0 +1,148 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  border: 2px solid #666; }
+
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif; }
+
+/* Style */
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;}
+
+.item-catalog {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+  flex-wrap: wrap; }
+  .item-catalog .item-wrapper {
+    display: block;
+    margin: 10px;
+    border: solid 1px #ccc; }
+    .item-catalog .item-wrapper .item-container .product-img img {
+      width: 180px;
+      height: 180px; }
+    .item-catalog .item-wrapper .item-container .product-details {
+      padding: 5px 0 10px 0;
+      text-align: center; }
+      .item-catalog .item-wrapper .item-container .product-details .brand-name,
+      .item-catalog .item-wrapper .item-container .product-details .package-detail {
+        font-size: 12px;
+        padding: 5px 0; }
+      .item-catalog .item-wrapper .item-container .product-details .brand-name {
+        padding: 5px 0 0; }
+      .item-catalog .item-wrapper .item-container .product-details .product-name {
+        font-size: 16px;
+        padding: 5px 0; }
+      .item-catalog .item-wrapper .item-container .product-details .product-price {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 0; }
+      .item-catalog .item-wrapper .item-container .product-details input {
+        background-image: linear-gradient(120deg, #0d93db 0%, #04a3ef 20%, #34bfe0 80%, #38c7e8 100%);
+        text-shadow: 0 1px 3px rgba(36,180,126,.4);
+        color: #fff;
+        height: 32px;
+        width: 120px;
+        border-radius: 0;
+        border: none;
+        cursor: pointer;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-size: 10px; }
+      .item-catalog .item-wrapper .item-container .product-details .quantity-bar {
+        display: flex;
+        width: 120px;
+        height: 30px;
+        margin: 0 auto;
+        justify-content: center;
+        border: solid 1px #ccc; }
+        .item-catalog .item-wrapper .item-container .product-details .quantity-bar .item-quantity-meter {
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        text-shadow: 0 1px 3px rgba(36,180,126,.4);
+          color: #fff;
+          width: 60%;
+          font-size: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase; }
+        .item-catalog .item-wrapper .item-container .product-details .quantity-bar .adjust-quantity {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          text-transform: uppercase; }
+
+.cart {
+  min-width: 300px;
+  padding: 20px;
+  border: solid 1px #ccc;
+  margin: 30px 10px;
+  max-height: 600px; }
+  .cart .cart-overview {
+    display: flex; }
+    .cart .cart-overview .item-count,
+    .cart .cart-overview .grand-total {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1; }
+      .cart .cart-overview .item-count span,
+      .cart .cart-overview .grand-total span {
+        padding: 10px; }
+    .cart .cart-overview .item-count .count-meter, .cart .cart-overview .item-count .total-amount, .cart .cart-overview .grand-total .count-meter, .cart .cart-overview .grand-total .total-amount {
+      font-size: 20px;
+      font-weight: bold; }
+  .cart h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 0 20px 0; }

@@ -1,0 +1,25 @@
+{
+  "name": "cart-2",
+  "description": null,
+  "version": "0.0.6",
+  "dependencies": {
+    "redux-thunk": "2.2.0",
+    "redux-promise-middleware": "5.0.0",
+    "redux-persist": "5.4.0",
+    "redux-logger": "3.0.6",
+    "redux": "3.7.2",
+    "react-redux": "5.0.6",
+    "react-dom": "16.0.0",
+    "react": "16.0.0",
+    "axios": "0.17.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
